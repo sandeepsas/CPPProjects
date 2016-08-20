@@ -1,5 +1,5 @@
 /*
- * pattern.h
+ * pattern.h (abstract class)
  *
  *  Created on: Aug 16, 2016
  *      Author: sandeep
@@ -22,9 +22,8 @@ public:
 	virtual ~Pattern(){
 
 	}
-	virtual void printPattern(){
-		std::cout<<"Virtual function of Pattern Main Interface";
-	}
+	/*Pure virtual function*/
+	virtual void printPattern()=0;
 
 };
 
